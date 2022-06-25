@@ -1,0 +1,8 @@
+ar\com\wolfscrin\webapp\jaxrs\models\Curso.class
+ar\com\wolfscrin\webapp\jaxrs\models\Instructor.class
+ar\com\wolfscrin\webapp\jaxrs\ProducerEntityManager.class
+ar\com\wolfscrin\webapp\jaxrs\services\CursoService.class
+ar\com\wolfscrin\webapp\jaxrs\repositories\CursoRepository.class
+ar\com\wolfscrin\webapp\jaxrs\services\CursoServicempl.class
+ar\com\wolfscrin\webapp\jaxrs\repositories\CursoRepositoryImpl.class
+ar\com\wolfscrin\webapp\jaxrs\controllers\CursoRestController.class
