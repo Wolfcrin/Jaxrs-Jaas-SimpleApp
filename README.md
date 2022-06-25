@@ -1,38 +1,33 @@
 # Jaxrs-Jaas-SimpleApp
 
-Client:
-Java: openjdk 17
+Client:  
+Java: openjdk 17  
+
+Server:  
+Java: openjdk 17  
+Application Server: WildFly  
+DB: Mysql  
 
 
+In: application/json  
+Out: application/json  
+Paths Base  
+/cursos  
 
-Server:
-Java: openjdk 17
-Application Server: WildFly
-DB: Mysql
+Out: application/json  
+POST  /webapp-jaxrs-jaas/api/cursos  
+CursoRestController.crear(Curso curso)  
 
+GET /webapp-jaxrs-jaas/api/cursos  
+CursoRestController.listar()  
 
-Resource Paths
-/cursos
-→ application/json
-← application/json
+In:  application/json 
+Out: application/json  
+GET /webapp-jaxrs-jaas/api/cursos/{id}  
 
-POST/webapp-jaxrs-jaas/api/cursos
-CursoRestController.crear(Curso arg0)
-← application/json
-
-GET/ webapp-jaxrs-jaas/api/cursos
-CursoRestController.listar()
-
-/cursos/{id}
-→ application/json
-← application/json
-PUT/webapp-jaxrs-jaas/api/cursos/{id}
-CursoRestController.editar(@PathParam long id, ar.com.wolfscrin.webapp.jaxrs.models.Curso arg1)
-← application/json
-
-
-DELETE/webapp-jaxrs-jaas/api/cursos/{id}
-CursoRestController.eliminar(@PathParam long id)
-← application/json
-GET/   webapp-jaxrs-jaas/api/cursos/{id}
-CursoRestController.porId(@PathParam long id)
+Out: application/json 
+PUT  /webapp-jaxrs-jaas/api/cursos/{id}  
+CursoRestController.editar(@PathParam long id,Curso curso)   
+  
+DELETE /webapp-jaxrs-jaas/api/cursos/{id}  
+CursoRestController.eliminar(@PathParam long id)  
